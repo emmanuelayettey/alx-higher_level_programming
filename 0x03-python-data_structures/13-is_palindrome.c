@@ -20,13 +20,11 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	*head = new;
 	return (new);
 }
-
 /**
 *is_palindrome - a function that identifies if a syngle linked list is palindrome
 *@head: head of listint_t
 *Return: 1 if it is palindrome else 0
 */
-
 int is_palindrome(listint_t **head)
 {
 	listint_t *head2 = *head;
