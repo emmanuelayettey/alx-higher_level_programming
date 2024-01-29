@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-""" an empty class rectangle that defines a rectangle
+""" empty class Rectangle that defines a rectangle
 """
 
 
 class Rectangle:
-    """ a class rectangle"""
+    """ class rectangle"""
     def __init__(self, width=0, height=0):
-        """ Installing with optional width and height"""
+        """ Instantiation with optional width and height"""
         self.width = width
         self.height = height
 
@@ -27,9 +27,9 @@ class Rectangle:
         """ width setter
         """
         if type(value) is not int:
-            raise TypeError("the width must be an integer")
+            raise TypeError("width must be an integer")
         if value < 0:
-            raise ValueError("the width must be >= 0")
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @height.setter
@@ -37,9 +37,9 @@ class Rectangle:
         """ height setter
         """
         if type(value) is not int:
-            raise TypeError("the height must be an integer")
+            raise TypeError("height must be an integer")
         if value < 0:
-            raise ValueError("the height must be >= 0")
+            raise ValueError("height must be >= 0")
         self.__height = value
 
     def area(self):
@@ -66,6 +66,6 @@ class Rectangle:
         return "Rectangle({}, {})".format(self.__width, self.__height)
 
     def __del__(self):
-        """function that prints the message when an instance of Rectangle is deleted
+        """Print the message when an instance of Rectangle is deleted
         """
         print("Bye rectangle...")
